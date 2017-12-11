@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Language" content="zh-CN" />
+  <script type='text/javascript' src='//apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js?ver=5.2'></script>
+  
+  <script type="text/javascript">
+    var isPhone = navigator.userAgent.match(/iPad|iPhone|Linux|Android|iPod/i) != null;
+    var isWechat = navigator.userAgent.match(/MicroMessenger/i) != null;
+    var isPad = navigator.userAgent.match(/PAD|iPad/i) != null;
+    var play_type = "";
+  </script>
+</head>
+
+<body class="single single-post postid-3033 single-format-standard search_not focusslide_s_m ui-navtop zh">
+  <section class="container">
+    <div class="content-wrap">
+      <div class="content">
+        <div class="video-content">
+          <article class="article-content">
+            <p>
+              <div class="player_box">
+                <div class="player" id="player"></div>
+              </div>
+              <p>
+                <script type="text/javascript">
+                  var play_type = "mc",
+                    vid = "9b0bc32d07b54e4f777aaf60df67e8f56994d15c";
+                </script>
+              </p>
+          </article>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+        var t = '<div class="choose" id="choose" ><input id="bt" type="button" value="关灯" onclick="Switch()"></div><iframe class="player" src="http://api.1suplayer.me/1SuPlayer/?type=' +
+          play_type + '&v=' + vid +
+          '" frameborder="0" border="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen="" style="height: 100%;"></iframe>'
+      if (play_type != "") {
+        $('#player').html(t);
+      }
+      console.log(t)
+    </script>
+    </div>
+  </section>
+</body>
+</html>
